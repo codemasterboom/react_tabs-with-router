@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { tabs } from '../api/tabs';
-import { TabsComponent } from '../components/Tabs';
+import { Tabs } from '../components/Tabs';
 
 export const TabsPage = () => {
   const { tabId } = useParams();
@@ -10,7 +10,7 @@ export const TabsPage = () => {
     <>
       <h1 className="title">Tabs page</h1>
 
-      <TabsComponent tabs={tabs} activeTab={selectedTab} />
+      <Tabs tabs={tabs} activeTab={selectedTab} />
     </>
   );
 };
